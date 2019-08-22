@@ -1,6 +1,6 @@
 <template>
-  <div class="home">
-    <HelloWorld msg="Jim Strother" />
+  <div class="whoiam">
+    <HelloWorld msg="Who I Am" />
   </div>
 </template>
 
@@ -9,7 +9,7 @@
 import HelloWorld from '@/components/HelloWorld.vue';
 
 export default {
-  name: 'home',
+  name: 'whoiam',
   components: {
     HelloWorld,
   },
