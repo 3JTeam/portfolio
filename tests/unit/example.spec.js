@@ -4,7 +4,7 @@ import PageTitle from '@/components/PageTitle.vue';
 
 describe('PageTitle.vue', () => {
   it('renders props.pageTitle when passed', () => {
-    const pageTitle = 'new message';
+    const pageTitle = 'new title';
     const wrapper = shallowMount(PageTitle, {
       propsData: {
         pageTitle,
