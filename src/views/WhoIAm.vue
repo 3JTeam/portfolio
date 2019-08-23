@@ -1,23 +1,23 @@
 <template>
   <div class="whoiam">
-    <HelloWorld msg="Who I Am" />
+    <PageTitle pageTitle="Who I Am" />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue';
+import PageTitle from '@/components/PageTitle.vue';
 
 export default {
   name: 'whoiam',
   components: {
-    HelloWorld,
+    PageTitle,
   },
 };
 </script>
 
 <style scoped lang="scss">
-home {
+whoiam {
   background-color: $backGroundColor;
 }
 </style>

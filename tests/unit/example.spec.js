@@ -1,13 +1,15 @@
 import { expect } from 'chai';
 import { shallowMount } from '@vue/test-utils';
-import HelloWorld from '@/components/HelloWorld.vue';
+import PageTitle from '@/components/PageTitle.vue';
 
-describe('HelloWorld.vue', () => {
-  it('renders props.msg when passed', () => {
-    const msg = 'new message';
-    const wrapper = shallowMount(HelloWorld, {
-      propsData: { msg },
+describe('PageTitle.vue', () => {
+  it('renders props.pageTitle when passed', () => {
+    const pageTitle = 'new message';
+    const wrapper = shallowMount(PageTitle, {
+      propsData: {
+        pageTitle,
+      },
     });
-    expect(wrapper.text()).to.include(msg);
+    expect(wrapper.text()).to.include(pageTitle);
   });
 });

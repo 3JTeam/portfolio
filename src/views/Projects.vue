@@ -1,23 +1,23 @@
 <template>
   <div class="projects">
-    <HelloWorld msg="Projects page" />
+    <PageTitle pageTitle="Projects page" />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue';
+import PageTitle from '@/components/PageTitle.vue';
 
 export default {
   name: 'projects',
   components: {
-    HelloWorld,
+    PageTitle,
   },
 };
 </script>
 
 <style scoped lang="scss">
-home {
+projects {
   background-color: $backGroundColor;
 }
 </style>

@@ -1,23 +1,23 @@
 <template>
   <div class="skillset">
-    <HelloWorld msg="Skill Set page" />
+    <PageTitle pageTitle="Skill Set page" />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue';
+import PageTitle from '@/components/PageTitle.vue';
 
 export default {
   name: 'skillset',
   components: {
-    HelloWorld,
+    PageTitle,
   },
 };
 </script>
 
 <style scoped lang="scss">
-home {
+skillset {
   background-color: $backGroundColor;
 }
 </style>
