@@ -17,7 +17,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-projects {
+.projects {
   background-color: $backGroundColor;
 }
 </style>

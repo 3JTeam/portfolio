@@ -6,11 +6,24 @@
       <router-link to="/projects">projects</router-link>
     </div>
     <router-view />
+    <Footer />
   </div>
 </template>
 
+<script>
+import Footer from '@/components/Footer.vue';
+export default {
+  components: {
+    Footer,
+  },
+};
+</script>
+
 <style scoped lang="scss">
 #app {
+  * {
+    border: 1px solid red;
+  }
   font-family: $firaSansBold;
   text-align: center;
   color: #2c3e50;

@@ -17,7 +17,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-whoiam {
+.whoiam {
   background-color: $backGroundColor;
 }
 </style>

@@ -17,7 +17,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-skillset {
+.skillset {
   background-color: $backGroundColor;
 }
 </style>
