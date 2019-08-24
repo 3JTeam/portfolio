@@ -19,7 +19,6 @@
   justify-content: center;
   align-items: center;
   color: $textColor;
-  // margin: auto;
   padding-top: 4em;
   text-align: center;
 

@@ -12,8 +12,8 @@
   height: 35em;
 }
 .proTitle {
-  color: white;
-  padding-top: 2em;
+  color: $backgroundColor;
+  padding-top: 1.5em;
   font-size: 3em;
 }
 </style>

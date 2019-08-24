@@ -21,7 +21,7 @@ export default {
 
 <style scoped lang="scss">
 .home {
-  background-color: $backGroundColor;
+  background-color: $backgroundColor;
   padding: 0;
 }
 </style>

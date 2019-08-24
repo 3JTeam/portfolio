@@ -18,6 +18,6 @@ export default {
 
 <style scoped lang="scss">
 .skillset {
-  background-color: $backGroundColor;
+  background-color: $backgroundColor;
 }
 </style>

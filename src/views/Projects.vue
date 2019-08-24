@@ -18,6 +18,6 @@ export default {
 
 <style scoped lang="scss">
 .projects {
-  background-color: $backGroundColor;
+  background-color: $backgroundColor;
 }
 </style>

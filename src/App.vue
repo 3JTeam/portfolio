@@ -21,9 +21,6 @@ export default {
 
 <style scoped lang="scss">
 #app {
-  * {
-    border: 1px solid red;
-  }
   font-family: $firaSansBold;
   text-align: center;
   color: #2c3e50;
