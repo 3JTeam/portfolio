@@ -10,6 +10,7 @@ module.exports = [
       {
         name: 'JavaScript',
         usedSince: 2015,
+        blurb: 'The language I know best',
         basics: [
           {
             title: 'current standard',
