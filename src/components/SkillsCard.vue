@@ -1,9 +1,8 @@
 <template>
   <div class="skillCard">
     <div class="cardHeader">
-      <h1 class="title">{{ name }}</h1>
-      <h3 class="subHeading">Used Since: {{ usedSince }}</h3>
-      <p>{{ blurb }}</p>
+      <h3 class="title">{{ name }}</h3>
+      <h4 class="subHeading">Used Since: {{ usedSince }}</h4>
     </div>
   </div>
 </template>
@@ -19,4 +18,13 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+* {
+  border: 1px solid red;
+}
+.skillCard {
+  height: 10em;
+  width: 20em;
+  margin: 0.5em;
+}
+</style>

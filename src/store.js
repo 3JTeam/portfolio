@@ -5,16 +5,16 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    skillName: null,
+    titleName: null,
   },
   mutations: {
-    setSkillName(state, payload) {
-      state.skillName = payload;
+    setTitleName(state, titleName) {
+      state.titleName = titleName;
     },
   },
   getters: {
-    getSelectedName: state => {
-      return state.skillName;
+    getSelectedTitleName: state => {
+      return state.titleName;
     },
   },
   actions: {},

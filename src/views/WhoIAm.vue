@@ -55,10 +55,6 @@ export default {
     margin-left: 4em;
     margin-right: 4em;
     padding: 2em;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: center;
   }
 }
 </style>

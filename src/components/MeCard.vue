@@ -21,15 +21,10 @@ export default {
 
 <style lang="scss" scoped>
 .cardHeader {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-
   img {
     width: 2em;
     height: 2em;
-    padding-top: 1em;
-    padding-right: 0.5em;
+    margin-top: 1em;
   }
 }
 </style>

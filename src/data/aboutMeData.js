@@ -5,7 +5,7 @@ module.exports = [
     title: 'Coder',
     imageSrc: 'coder.png',
     altText: 'Coder Image',
-    bodyText: 'I love code. I love the challenge it gives me as I work on projects and solve their unique problems. From the SCSS that styles each web page to the JavaScript that powers both the front and back ends, I aim to build web sites and web apps with a consistent feel throughout and a thoughful thoroughness.',
+    bodyText: 'I love code. I love the challenge it gives me as I work on projects and solve their unique problems. From the SCSS that styles each web page to the JavaScript that powers both the front and back ends, I aim to build web sites and web apps with a consistent and thoughtful feel throughout.',
   },
   {
     title: 'Creator',

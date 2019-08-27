@@ -6,15 +6,16 @@
 
 <style lang="scss" scoped>
 .homeDisplay {
-  background-image: url('../assets/images/background.jpg');
-  background-size: (100%, 100%, contain);
-  background-repeat: no-repeat;
+  flex-flow: column nowrap;
+  background: url('../assets/images/background.jpg') center no-repeat;
   width: 100%;
-  height: 35em;
-}
-.proTitle {
-  color: $backgroundColor;
-  padding-top: 1.5em;
-  font-size: 3em;
+  height: 100%;
+
+  .proTitle {
+    color: $backgroundColor;
+    max-width: 60%;
+    margin: auto;
+    margin-top: 4em;
+  }
 }
 </style>

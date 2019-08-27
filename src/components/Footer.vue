@@ -15,19 +15,15 @@
 <style lang="scss" scoped>
 footer {
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
   color: $textColor;
-  padding-top: 4em;
   text-align: center;
-  max-height: 3em;
 
   i {
     color: $textColor;
     font-size: 3em;
-    margin: 1.5em;
-    margin-top: 0.1em;
+    margin: 0.5em;
     cursor: pointer;
   }
 }

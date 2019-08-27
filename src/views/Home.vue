@@ -1,6 +1,6 @@
 <template>
   <main class="home">
-    <PageTitle pageTitle="Jim Strother" />
+    <PageTitle pageTitle="Jim Strother" id="title" />
     <HomeDisplay />
   </main>
 </template>
@@ -22,5 +22,11 @@ export default {
 <style scoped lang="scss">
 .home {
   background-color: $backgroundColor;
+  display: flex;
+  flex-flow: column nowrap;
+  align-content: center;
+  #title {
+    align-self: center;
+  }
 }
 </style>
