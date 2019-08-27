@@ -7,7 +7,8 @@
 <style lang="scss" scoped>
 .homeDisplay {
   background-image: url('../assets/images/background.jpg');
-  background-size: cover;
+  background-size: (100%, 100%, contain);
+  background-repeat: no-repeat;
   width: 100%;
   height: 35em;
 }

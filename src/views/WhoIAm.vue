@@ -1,5 +1,5 @@
 <template>
-  <div class="whoiam">
+  <main class="whoiam">
     <PageTitle pageTitle="Who I Am" />
     <img src="@/assets/images/JimProfilePic.jpg" alt="Jim Strother" />
     <div v-for="(aboutMeItem, index) in aboutMeData" :key="index" class="meCardDisplay">
@@ -10,7 +10,7 @@
         :bodyText="aboutMeItem.bodyText"
       />
     </div>
-  </div>
+  </main>
 </template>
 
 <script>

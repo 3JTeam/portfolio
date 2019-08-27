@@ -1,8 +1,8 @@
 <template>
-  <div class="home">
+  <main class="home">
     <PageTitle pageTitle="Jim Strother" />
     <HomeDisplay />
-  </div>
+  </main>
 </template>
 
 <script>
@@ -22,6 +22,5 @@ export default {
 <style scoped lang="scss">
 .home {
   background-color: $backgroundColor;
-  padding: 0;
 }
 </style>

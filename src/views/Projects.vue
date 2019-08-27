@@ -1,7 +1,7 @@
 <template>
-  <div class="projects">
+  <main class="projects">
     <PageTitle pageTitle="Projects page" />
-  </div>
+  </main>
 </template>
 
 <script>

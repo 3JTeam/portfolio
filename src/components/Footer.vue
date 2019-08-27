@@ -1,5 +1,5 @@
 <template>
-  <div class="footer">
+  <footer>
     <a href="https://twitter.com/jimcodesjs" target="_blank" rel="noopener noreferrer">
       <i class="fab fa-twitter-square"></i>
     </a>
@@ -9,11 +9,11 @@
     <a href="https://www.linkedin.com/in/jimstrother/" target="_blank" rel="noopener noreferrer">
       <i class="fab fa-linkedin"></i>
     </a>
-  </div>
+  </footer>
 </template>
 
 <style lang="scss" scoped>
-.footer {
+footer {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
@@ -21,6 +21,7 @@
   color: $textColor;
   padding-top: 4em;
   text-align: center;
+  max-height: 3em;
 
   i {
     color: $textColor;
