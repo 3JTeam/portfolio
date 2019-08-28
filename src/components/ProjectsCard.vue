@@ -42,6 +42,8 @@ export default {
     width: 15em;
     height: 10em;
     align-self: center;
+    border: $standardBorder;
+    border-radius: $standardBorderRadius;
   }
 
   .code {

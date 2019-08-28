@@ -44,10 +44,12 @@ export default {
   img {
     width: 10em;
     height: 10em;
+    border-radius: $standardBorderRadius;
   }
 
   .meCardDisplay {
     background-color: darken($backgroundColor, 7%);
+    border-radius: $standardBorderRadius;
     margin: 1em;
     margin-left: 4em;
     margin-right: 4em;
