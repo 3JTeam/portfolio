@@ -4,7 +4,11 @@
       <h3 class="title">{{ name }}</h3>
       <h4 class="subHeading">Used Since: {{ usedSince }}</h4>
     </div>
-    <p v-if="moreStuff">more</p>
+    <p class="blurb">{{ blurb }}</p>
+    <div v-if="moreStuff" class="showMore">
+      <hr />
+      <p @click="setTitleName(name)" class="more">more info</p>
+    </div>
   </div>
 </template>
 
@@ -17,16 +21,31 @@ export default {
     blurb: String,
     moreStuff: Boolean,
   },
+  methods: {
+    setTitleName(titleName) {
+      this.$store.commit('setTitleName', titleName);
+    },
+  },
 };
 </script>
 
 <style lang="scss" scoped>
-* {
-  border: 1px solid red;
-}
 .skillCard {
   height: 10em;
   width: 20em;
   margin: 0.5em;
+  padding: 0.5em;
+  background-color: $backgroundColor;
+  border: 1px solid black;
+
+  .cardHeader {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+  }
+
+  .more {
+    cursor: pointer;
+  }
 }
 </style>

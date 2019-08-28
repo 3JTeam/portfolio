@@ -7,7 +7,7 @@
         :name="item.name"
         :usedSince="item.usedSince"
         :blurb="item.blurb"
-        :moreStuff="item.length() > 3"
+        :moreStuff="Object.keys(item).length > 3"
         :key="index"
       />
     </div>
@@ -40,13 +40,10 @@ export default {
 </script>
 
 <style scoped lang="scss">
-* {
-  border: 1px solid red;
-}
 .skillset {
   display: flex;
   flex-flow: column nowrap;
-  background-color: $backgroundColor;
+  background: $backgroundColor;
 
   .skillCardDisplay {
     display: flex;

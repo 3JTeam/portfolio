@@ -28,8 +28,8 @@ export default {
     [row3-start] 'footer footer footer footer footer' 1fr [row3-end]
     / auto;
   height: 100vh;
-  width: 100vw;
-  font-family: $firaSansBold;
+  width: 98vw;
+  font-family: $firaSansRegular;
   text-align: center;
   color: #2c3e50;
 
@@ -45,7 +45,6 @@ export default {
     }
   }
   #routerView {
-    margin-top: 3em;
     grid-area: routerView;
   }
   #footer {

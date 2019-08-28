@@ -48,9 +48,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-* {
-  border: 1px solid red;
-}
 .header {
   display: flex;
   flex-flow: column nowrap;
@@ -61,9 +58,16 @@ export default {
     justify-content: space-around;
     .title,
     .reset {
-      padding: 0.5em;
+      background-color: $backgroundColor;
       cursor: pointer;
+      padding: 0.5em;
     }
+  }
+  p {
+    font-weight: bold;
+    background-color: $backgroundColor;
+    width: 30%;
+    align-self: center;
   }
 }
 </style>

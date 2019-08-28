@@ -6,7 +6,7 @@
 
 <style lang="scss" scoped>
 .homeDisplay {
-  background: url('../assets/images/background.jpg') center no-repeat;
+  background: url('../assets/images/background.jpg') center/100% no-repeat;
   width: 100%;
   height: 100%;
 
