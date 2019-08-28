@@ -39,8 +39,8 @@ export default {
   width: 20em;
   margin: 0.5em;
   padding: 0.5em;
-  background-color: $backgroundColor;
-  border: 1px solid darken($backgroundColor, 15%);
+  border: $standardBorder;
+  border-radius: $standardBorderRadius;
 
   img {
     width: 5em;

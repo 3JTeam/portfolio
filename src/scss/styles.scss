@@ -23,3 +23,10 @@ $firaSansSemiBold: "Fira Sans Semi-Bold", sans-serif;
 
 $backgroundColor: #ffffff;
 $textColor: #8c8c8c;
+$activeLink: #42b983;
+$baseTextColor: #2c3e50;
+$darkBackgroundColor: darken($backgroundColor, 15%);
+
+// borders
+$standardBorder: 1px solid $darkBackgroundColor;
+$standardBorderRadius: 0.5em;
