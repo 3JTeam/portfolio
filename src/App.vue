@@ -28,7 +28,7 @@ export default {
     [row3-start] 'footer footer footer footer footer' 1fr [row3-end]
     / auto;
   height: 100vh;
-  width: 98vw;
+  width: 100vw;
   font-family: $firaSansRegular;
   text-align: center;
   color: #2c3e50;

@@ -1,13 +1,9 @@
 <template>
   <div class="skillCard">
-    <div class="cardHeader">
-      <h3 class="title">{{ name }}</h3>
-      <h4 class="subHeading">Used Since: {{ usedSince }}</h4>
-    </div>
-    <p class="blurb">{{ blurb }}</p>
-    <div v-if="moreStuff" class="showMore">
-      <hr />
-      <p @click="setTitleName(name)" class="more">more info</p>
+    <img :src="getImageURL(imageSrc)" :alt="name + ' Logo'" />
+    <div class="info">
+      <p>{{ name }}</p>
+      <p>Since {{ since }}</p>
     </div>
   </div>
 </template>
@@ -17,13 +13,17 @@ export default {
   name: 'skillset',
   props: {
     name: String,
-    usedSince: Number,
-    blurb: String,
-    moreStuff: Boolean,
+    since: Number,
+    imageSrc: String,
   },
   methods: {
     setTitleName(titleName) {
       this.$store.commit('setTitleName', titleName);
+    },
+    getImageURL(image) {
+      if (image) {
+        return require(`@/assets/images/${image}`);
+      }
     },
   },
 };
@@ -31,17 +31,20 @@ export default {
 
 <style lang="scss" scoped>
 .skillCard {
-  height: 10em;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 7em;
   width: 20em;
   margin: 0.5em;
   padding: 0.5em;
   background-color: $backgroundColor;
-  border: 1px solid black;
+  border: 1px solid darken($backgroundColor, 15%);
 
-  .cardHeader {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
+  img {
+    width: 5em;
+    height: 5em;
   }
 
   .more {

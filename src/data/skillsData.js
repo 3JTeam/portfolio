@@ -1,130 +1,113 @@
 module.exports = {
-  languages: [
+  'Front End': [
     {
       name: 'HTML',
-      usedSince: 2015,
-      blurb:
-        'After a 20 year hiatus, I started to build websites again to transition to a new career.',
+      since: 2015,
+      imageSrc: 'html-icon.png',
     },
     {
       name: 'CSS',
-      usedSince: 2015,
-      blurb:
-        "It's the same with CSS as HTML, except I now use SCSS for dynamic and easy to update stylesheets.",
+      since: 2015,
+      imageSrc: 'css-icon.png',
     },
     {
       name: 'JavaScript',
-      usedSince: 2015,
-      blurb: 'The language I know best',
-      basics: [
-        {
-          title: 'current standard',
-          blurb: "I'm always staying on top of changes to ECMAScript.",
-        },
-        {
-          title: 'RESTful API',
-          blurb: 'As a full-stack developer, I can get a wealth of data for any application.',
-        },
-      ],
-      framework: {
-        frontEnd: [
-          {
-            name: 'React',
-            usedSince: 2016,
-            blurb: 'The mainstay of front-end development',
-          },
-          {
-            name: 'Redux',
-            usedSince: 2016,
-            blurb: 'Flux-inspired application state management library for React',
-          },
-          {
-            name: 'React-Router',
-            usedSince: 2017,
-            blurb: 'Declarative navigational components',
-          },
-          {
-            name: 'React Native',
-            usedSince: 2019,
-            blurb: 'My first attempt at mobile-specific development',
-          },
-          {
-            name: 'Vue.js',
-            usedSince: 2019,
-            blurb: 'A new, progressive framework and a personal favorite',
-          },
-          {
-            name: 'Vuex',
-            usedSince: 2019,
-            blurb: 'Application state management library',
-          },
-          {
-            name: 'Vue-Router',
-            usedSince: 2019,
-            blurb: 'Navigational components able to deeply integrate with Vue',
-          },
-        ],
-        backEnd: [
-          {
-            name: 'Node.js',
-            usedSince: 2016,
-            blurb: "Well, it's Node. Do I really need to say anything at this stage?",
-          },
-          {
-            name: 'Express.js',
-            usedSince: 2016,
-            blurb: "Let's face it, this is most everybody's go to web framework choice.",
-          },
-          {
-            name: 'Passport.js',
-            usedSince: 2016,
-            blurb: 'Authentication for Express. So simple...',
-          },
-          {
-            name: 'bcrypt',
-            usedSince: 2017,
-            blurb: 'Encryption package for secure log-in',
-          },
-          {
-            name: 'MongoDB',
-            usedSince: 2016,
-            blurb: 'Easily-structured database',
-          },
-          {
-            name: 'Mongoose',
-            usedSince: 2016,
-            blurb: 'Object modeling for MongDB',
-          },
-          {
-            name: 'Typescript',
-            usedSince: 2018,
-            blurb: 'Strongly-typed superset of JavaScript',
-          },
-        ],
-      },
+      since: 2015,
+      imageSrc: 'js-icon.png',
     },
     {
-      name: 'Java',
-      usedSince: 2019,
-      blurb: 'I just recently started teaching myself Java to expand my skills.',
+      name: 'React',
+      since: 2016,
+      imageSrc: 'react-icon.png',
+    },
+    {
+      name: 'Redux',
+      since: 2016,
+      imageSrc: 'redux-icon.png',
+    },
+    {
+      name: 'React-Router',
+      since: 2017,
+      imageSrc: 'react-router-icon.png',
+    },
+    {
+      name: 'React Native',
+      since: 2019,
+      imageSrc: 'react-native-icon.png',
+    },
+    {
+      name: 'Vue.js',
+      since: 2019,
+      imageSrc: 'vue-icon.png',
+    },
+    {
+      name: 'Vuex',
+      since: 2019,
+      imageSrc: 'vuex-icon.png',
+    },
+    {
+      name: 'Vue-Router',
+      since: 2019,
+      imageSrc: 'vue-router-icon.jpg',
     },
   ],
-  otherSkills: [
+  'Back End': [
+    {
+      name: 'Node.js',
+      since: 2016,
+      imageSrc: 'node-icon.png',
+    },
+    {
+      name: 'Express.js',
+      since: 2016,
+      imageSrc: 'express-icon.png',
+    },
+    {
+      name: 'Passport.js',
+      since: 2016,
+      imageSrc: 'passport-icon.png',
+    },
+    {
+      name: 'bcrypt',
+      since: 2017,
+      imageSrc: 'bcrypt-icon.jpg',
+    },
+    {
+      name: 'MongoDB',
+      since: 2016,
+      imageSrc: 'mongoDB-icon.png',
+    },
+    {
+      name: 'Mongoose',
+      since: 2016,
+      imageSrc: 'mongoose-icon.jpg',
+    },
+    {
+      name: 'Typescript',
+      since: 2018,
+      imageSrc: 'typescript-icon.png',
+    },
+  ],
+  'Other Skills': [
     {
       name: 'Responsive Web Development',
-      usedSince: 2015,
-      blurb: 'The mobile web is too important to ignore.',
+      since: 2015,
+      imageSrc: 'responsiveWD-icon.jpg',
     },
     {
       name: 'Git',
-      usedSince: 2015,
-      blurb: 'Um, yeah, version control.',
+      since: 2015,
+      imageSrc: 'git-icon.png',
     },
     {
       name: 'Functional Programming',
-      usedSince: 2018,
-      blurb:
-        'A paradigm that strives to reduce errors by using functions in such a way to avoid changing state and mutable data.',
+      since: 2018,
+      imageSrc: 'functionalProg-icon.png',
+    },
+    {
+      name: 'Java',
+      since: 2019,
+      imageSrc: 'java11-icon.png',
     },
   ],
 };

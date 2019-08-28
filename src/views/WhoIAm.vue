@@ -28,9 +28,9 @@ export default {
     };
   },
   methods: {
-    getImageURL(imageSrc) {
-      if (imageSrc) {
-        return require(`@/assets/images/${imageSrc}`);
+    getImageURL(image) {
+      if (image) {
+        return require(`@/assets/images/${image}`);
       }
     },
   },
