@@ -4,6 +4,7 @@
       <h3 class="title">{{ name }}</h3>
       <h4 class="subHeading">Used Since: {{ usedSince }}</h4>
     </div>
+    <p v-if="moreStuff">more</p>
   </div>
 </template>
 
@@ -14,6 +15,7 @@ export default {
     name: String,
     usedSince: Number,
     blurb: String,
+    moreStuff: Boolean,
   },
 };
 </script>

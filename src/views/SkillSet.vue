@@ -1,6 +1,5 @@
 <template>
   <main class="skillset">
-    <PageTitle pageTitle="Skill Set" />
     <SkillSetHeader />
     <div class="skillCardDisplay">
       <SkillsCard
@@ -8,6 +7,7 @@
         :name="item.name"
         :usedSince="item.usedSince"
         :blurb="item.blurb"
+        :moreStuff="item.length() > 3"
         :key="index"
       />
     </div>
@@ -16,7 +16,6 @@
 
 <script>
 // @ is an alias to /src
-import PageTitle from '@/components/PageTitle.vue';
 import SkillSetHeader from '@/components/SkillSetHeader';
 import SkillsCard from '@/components/SkillsCard.vue';
 import skillsData from '@/data/skillsData';
@@ -24,7 +23,6 @@ import skillsData from '@/data/skillsData';
 export default {
   name: 'skillset',
   components: {
-    PageTitle,
     SkillsCard,
     SkillSetHeader,
   },
@@ -46,9 +44,15 @@ export default {
   border: 1px solid red;
 }
 .skillset {
+  display: flex;
+  flex-flow: column nowrap;
   background-color: $backgroundColor;
 
   .skillCardDisplay {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-self: center;
     margin-top: 5em;
     margin-bottom: 5em;
     max-width: 50%;

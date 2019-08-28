@@ -1,18 +1,12 @@
 <template>
-  <main class="projects">
-    <PageTitle pageTitle="Projects page" />
-  </main>
+  <main class="projects"></main>
 </template>
 
 <script>
 // @ is an alias to /src
-import PageTitle from '@/components/PageTitle.vue';
 
 export default {
   name: 'projects',
-  components: {
-    PageTitle,
-  },
 };
 </script>
 

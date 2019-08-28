@@ -45,6 +45,7 @@ export default {
     }
   }
   #routerView {
+    margin-top: 3em;
     grid-area: routerView;
   }
   #footer {

@@ -6,7 +6,6 @@
 
 <style lang="scss" scoped>
 .homeDisplay {
-  flex-flow: column nowrap;
   background: url('../assets/images/background.jpg') center no-repeat;
   width: 100%;
   height: 100%;

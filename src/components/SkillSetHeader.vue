@@ -51,11 +51,19 @@ export default {
 * {
   border: 1px solid red;
 }
-.skillSetHeader {
-  .title,
-  .reset {
-    padding: 0.5em;
-    cursor: pointer;
+.header {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  .skillSetHeader {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    .title,
+    .reset {
+      padding: 0.5em;
+      cursor: pointer;
+    }
   }
 }
 </style>

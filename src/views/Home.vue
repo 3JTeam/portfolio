@@ -1,19 +1,17 @@
 <template>
   <main class="home">
-    <PageTitle pageTitle="Jim Strother" id="title" />
+    <h1 class="title">Jim Strother</h1>
     <HomeDisplay />
   </main>
 </template>
 
 <script>
 // @ is an alias to /src
-import PageTitle from '@/components/PageTitle.vue';
 import HomeDisplay from '@/components/HomeDisplay.vue';
 
 export default {
   name: 'home',
   components: {
-    PageTitle,
     HomeDisplay,
   },
 };
@@ -24,7 +22,7 @@ export default {
   background-color: $backgroundColor;
   display: flex;
   flex-flow: column nowrap;
-  align-content: center;
+  justify-content: center;
   #title {
     align-self: center;
   }

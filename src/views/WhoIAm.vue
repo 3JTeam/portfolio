@@ -1,6 +1,5 @@
 <template>
   <main class="whoiam">
-    <PageTitle pageTitle="Who I Am" />
     <img src="@/assets/images/JimProfilePic.jpg" alt="Jim Strother" />
     <div v-for="(aboutMeItem, index) in aboutMeData" :key="index" class="meCardDisplay">
       <MeCard
@@ -15,14 +14,12 @@
 
 <script>
 // @ is an alias to /src
-import PageTitle from '@/components/PageTitle.vue';
 import MeCard from '@/components/MeCard.vue';
 import aboutMeData from '@/data/aboutMeData';
 
 export default {
   name: 'whoiam',
   components: {
-    PageTitle,
     MeCard,
   },
   data() {
