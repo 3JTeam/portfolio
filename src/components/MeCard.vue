@@ -27,8 +27,13 @@ export default {
   margin-left: 4em;
   margin-right: 4em;
   padding: 2em;
-  width: 35em;
-  height: 13em;
+  width: 40%;
+  line-height: 1.5;
+
+  @media (min-width: $gtMobile) {
+    width: 35em;
+    height: 13em;
+  }
 
   .cardHeader {
     img {

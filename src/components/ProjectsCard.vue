@@ -2,7 +2,7 @@
   <div class="projectsCard">
     <h3>{{ name }}</h3>
     <img :src="getImageURL(imageSrc)" :alt="name + ' Image'" />
-    <p>{{ about }}</p>
+    <p class="about">{{ about }}</p>
     <div class="code">
       <a :href="activeSite" target="_blank">See it live!</a>
       <a :href="gitHub" target="_blank">Check out the repo...</a>
@@ -36,7 +36,11 @@ export default {
   flex-flow: column nowrap;
   justify-content: space-around;
   padding: 5em;
-  width: 30em;
+  width: 50%;
+
+  @media (min-width: $gtMobile) {
+    width: 30em;
+  }
 
   img {
     width: 15em;
@@ -46,10 +50,15 @@ export default {
     border-radius: $standardBorderRadius;
   }
 
+  .about {
+    width: 100%;
+    line-height: 1.5;
+  }
+
   .code {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin-top: 2em;
 
     a {
@@ -59,6 +68,7 @@ export default {
       background: $darkBackgroundColor;
       border: $standardBorder;
       border-radius: $standardBorderRadius;
+      margin: 0.5em;
       padding: 0.5em;
     }
   }
