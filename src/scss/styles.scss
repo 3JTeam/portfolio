@@ -30,3 +30,22 @@ $darkBackgroundColor: darken($backgroundColor, 15%);
 // borders
 $standardBorder: 1px solid $darkBackgroundColor;
 $standardBorderRadius: 0.75em;
+
+// variables for responsive site
+$iphoneP: 480px;
+$gtiphoneP: 481px;
+
+$mobile: 640px;
+$gtMobile: 641px;
+
+$tabletP: 768px;
+$gtTabletP: 769px;
+
+$tabletL: 1024px;
+$gtTabletL: 1025px;
+
+$desktop: 990px;
+$gtDesktop: 991px;
+
+$cinema: 1400px;
+$gtCinema: 1401px;
