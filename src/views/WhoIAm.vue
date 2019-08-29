@@ -1,8 +1,10 @@
 <template>
   <main class="whoiam">
     <img src="@/assets/images/JimProfilePic.jpg" alt="Jim Strother" />
-    <div v-for="(aboutMeItem, index) in aboutMeData" :key="index" class="meCardDisplay">
+    <div class="meCardDisplay">
       <MeCard
+        v-for="(aboutMeItem, index) in aboutMeData"
+        :key="index"
         :imageSrc="getImageURL(aboutMeItem.imageSrc)"
         :altText="aboutMeItem.altText"
         :title="aboutMeItem.title"
@@ -39,21 +41,24 @@ export default {
 
 <style scoped lang="scss">
 .whoiam {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
   background-color: $backgroundColor;
 
   img {
+    align-self: center;
     width: 10em;
     height: 10em;
     border-radius: $standardBorderRadius;
   }
 
   .meCardDisplay {
-    background-color: darken($backgroundColor, 7%);
-    border-radius: $standardBorderRadius;
-    margin: 1em;
-    margin-left: 4em;
-    margin-right: 4em;
-    padding: 2em;
+    align-self: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-top: 3em;
   }
 }
 </style>
