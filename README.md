@@ -1,34 +1,3 @@
 # portfolio
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Run your unit tests
-```
-npm run test:unit
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+I rebuilt my portfolio site with Vue and Vuex as these are my preferred front-end frameworks, as compared to React/Redux. I also built it so that I can more easily keep it updated by adding or subtracting info in the different data files (ie. projectData.js). Further, I cleaned up the overall look and went with a more minimalist design as compared to what I had before, and ensured a responsive mobile-first web design to accomodate various screen sizes.
